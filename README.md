@@ -13,6 +13,11 @@ https://www.notion.so/Summary-3f194f4e03e5485fbbcdc5fd11892c57
 
 ![Sample Image](/Monitoring.png)
 
+## RAG Tracing  
+
+![Sample Image](/RAG_Tracing.png)
+
+
 ## Reproduction
 
 - Clone the repo, and run `make` in the terminal. You should see something similar to:
