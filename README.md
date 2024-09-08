@@ -7,9 +7,11 @@ Usage: make [option]
 
 Options:
   help                 Show this help message
-  setup                Install requirements and build docker services
+  setup                Install requirements, build docker services and prepare elasticsearch index
   db                   Setup database
-  start                Start docker services (detached mode)
+  index                Prepare elasticsearch index
+  start                Start docker services (detached mode) and run the app
+  tracing              Start LangMate - RAG tracing
   stop                 Stop docker services
 ```
 
