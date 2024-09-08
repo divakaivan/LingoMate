@@ -19,12 +19,16 @@ setup:  ## Install requirements, build docker services and prepare elasticsearch
 db:  ## Setup database
 	python db.py
 
+.PHONY: index
+index:  ## Prepare elasticsearch index
+	python prepare_index.py
+
 .PHONY: start
 start:  ## Start docker services (detached mode) and run the app
 	docker compose -f $(DOCKER_COMPOSE_FILE) up -d && streamlit run app.py
 
 .PHONY: tracing
-start:  ## Start LangMate - RAG tracing
+tracing:  ## Start LangMate - RAG tracing
 	streamlit run langmate.py
 
 .PHONY: stop
