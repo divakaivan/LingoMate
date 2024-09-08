@@ -1,3 +1,18 @@
+## LingoMate Introduction 
+
+https://www.notion.so/Summary-3f194f4e03e5485fbbcdc5fd11892c57
+
+## User Flow 
+![Sample Image](/UserFlow.png)
+
+
+## Architecture
+![Sample Image](/Diagram.png)
+
+## Monitoring 
+
+![Sample Image](/Monitoring.png)
+
 ## Reproduction
 
 - Clone the repo, and run `make` in the terminal. You should see something similar to:
@@ -7,11 +22,9 @@ Usage: make [option]
 
 Options:
   help                 Show this help message
-  setup                Install requirements, build docker services and prepare elasticsearch index
+  setup                Install requirements and build docker services
   db                   Setup database
-  index                Prepare elasticsearch index
-  start                Start docker services (detached mode) and run the app
-  tracing              Start LangMate - RAG tracing
+  start                Start docker services (detached mode)
   stop                 Stop docker services
 ```
 
@@ -20,3 +33,4 @@ Options:
 - Start ollama locally
     - Download [ollama](https://ollama.com/)
     - Run `ollama pull llama3.1` in your terminal. This will pull and setup llama3.1 for the RAG app 
+
